@@ -21,20 +21,21 @@ const data = [
     },
 ]
 
-export async function GET() {
-    return new Response(JSON.stringify(data), {
-      status: 201,
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
-  }
+// Normal get function 
+// export async function GET() {
+//     return new Response(JSON.stringify(data), {
+//       status: 201,
+//       headers: {
+//         "Content-Type": "application/json",
+//       },
+//     });
+//   }
 
   
 // dynamic parameter
-export async function GET(request:Request, {params:{id:string}}){
+export async function GET(request:Request, {params}:{params:{id:string}}){
     const {id} = await params
-    const message = data.find((mess)=>mess.id === perseIn(id))
+    const message = data.find((mess)=>mess.id === parseInt(id))
     return new Response(JSON.stringify(message),{
         status:201,
         headers: {
@@ -44,6 +45,7 @@ export async function GET(request:Request, {params:{id:string}}){
 }
 
 
+// Post Function Request
 export async function POST(request: Request){
     const message = await request.json()
     const newMessage = {
@@ -60,13 +62,14 @@ export async function POST(request: Request){
    }
 
 
-   export async function PUT(request: Request, {params:{id:string}}){
-    const {id} = await params
+// Put Function request
+   export async function PUT(request: Request, {params}:{params:{id:string}}){
+    const {id} =  params
     const body = await request.json()
     const {text} = body
-    const update = data.findIndex((d)=>d.id === perseIn(id))
+    const update = data.findIndex((d)=>d.id === parseInt(id))
     data[update].message = text
-    return new Response(JSON.stringify(data[id]),{
+    return new Response(JSON.stringify(data[update]),{
        status:201,
        headers: {
            "Content-Type": "application/json",

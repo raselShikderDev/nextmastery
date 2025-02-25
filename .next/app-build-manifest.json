@@ -11,35 +11,15 @@
       "static/chunks/main-app.js",
       "static/chunks/app/page.js"
     ],
-    "/complex-dashboard/layout": [
+    "/crud-request/route": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/complex-dashboard/layout.js"
+      "static/chunks/app/crud-request/route.js"
     ],
-    "/complex-dashboard/@notification/page": [
+    "/api/profile/route": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/complex-dashboard/@notification/page.js"
-    ],
-    "/complex-dashboard/@revenue/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/complex-dashboard/@revenue/page.js"
-    ],
-    "/complex-dashboard/@users/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/complex-dashboard/@users/page.js"
-    ],
-    "/complex-dashboard/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/complex-dashboard/page.js"
-    ],
-    "/get-request/route": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/get-request/route.js"
+      "static/chunks/app/api/profile/route.js"
     ]
   }
 }
