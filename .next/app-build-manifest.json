@@ -6,15 +6,40 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/propose4/page": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/propose4/page.js"
+      "static/chunks/app/page.js"
     ],
-    "/propose5/page": [
+    "/complex-dashboard/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/propose5/page.js"
+      "static/chunks/app/complex-dashboard/layout.js"
+    ],
+    "/complex-dashboard/@notification/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/complex-dashboard/@notification/page.js"
+    ],
+    "/complex-dashboard/@revenue/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/complex-dashboard/@revenue/page.js"
+    ],
+    "/complex-dashboard/@users/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/complex-dashboard/@users/page.js"
+    ],
+    "/complex-dashboard/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/complex-dashboard/page.js"
+    ],
+    "/get-request/route": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/get-request/route.js"
     ]
   }
 }
